@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="4" parallel="tests" name="Testng Orange(failed)" verbose="4">
+    <classes>
+      <class name="com.testng.orange">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.testng.orange -->
+    </classes>
+  </test> <!-- Testng Orange(failed) -->
+</suite> <!-- Failed suite [Suite] -->
