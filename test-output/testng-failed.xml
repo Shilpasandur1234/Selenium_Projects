@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="4" parallel="tests" name="Testng Orange(failed)" verbose="4">
     <classes>
-      <class name="com.selenium.dataDriven.DataDriven_FD">
+      <class name="com.testng.orange">
         <methods>
-          <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="fd_DataDriven"/>
+          <include name="afterTest"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.selenium.dataDriven.DataDriven_FD -->
+      </class> <!-- com.testng.orange -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testng Orange(failed) -->
+  <test thread-count="4" parallel="tests" name="Testng Mutual Fund(failed)" verbose="4">
+    <classes>
+      <class name="com.testng.LoginMutualFund">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="LoginAdminUser1"/>
+          <include name="LoginAdminUser"/>
+          <include name="afterTest"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.testng.LoginMutualFund -->
+    </classes>
+  </test> <!-- Testng Mutual Fund(failed) -->
+</suite> <!-- Failed suite [Suite] -->

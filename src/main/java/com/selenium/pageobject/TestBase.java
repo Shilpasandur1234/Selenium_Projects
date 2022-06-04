@@ -38,9 +38,9 @@ public class TestBase {
 		w.close();
 	}
 
-	public void openApplicationURL() {
+	public void openApplicationURL(String URL) {
 
-		w.get(application_url);
+		w.get(URL);
 	}
 
 	public void handleInputText(WebElement we, String inputText) {

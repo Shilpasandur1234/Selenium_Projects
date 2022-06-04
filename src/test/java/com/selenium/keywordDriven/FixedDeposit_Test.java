@@ -39,7 +39,7 @@ public class FixedDeposit_Test {
   @Test(priority = 1,description = "validate fixed deposit for 4 lakh")
   public void fd_4lakh() throws Exception {
 	  
-	  fd.openApplicationURL();
+	  fd.openApplicationURL(fd.ReadDataFromPropertiesFile("url_fd"));
 	  fd.handleInputText(fd.Principal_TextBox, "400000");
 	  fd.handleInputText(fd.interest_TextBox, "8");
 	  fd.handleInputText(fd.tenure_TextBox, "2");

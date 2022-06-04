@@ -12,4 +12,17 @@
       </class> <!-- com.testng.orange -->
     </classes>
   </test> <!-- Testng Orange(failed) -->
+  <test thread-count="4" parallel="tests" name="Testng Mutual Fund(failed)" verbose="4">
+    <classes>
+      <class name="com.testng.LoginMutualFund">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="LoginAdminUser1"/>
+          <include name="LoginAdminUser"/>
+          <include name="afterTest"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- com.testng.LoginMutualFund -->
+    </classes>
+  </test> <!-- Testng Mutual Fund(failed) -->
 </suite> <!-- Failed suite [Suite] -->
